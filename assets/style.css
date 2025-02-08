@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav {
@@ -44,6 +45,7 @@ nav {
  .banner {
     width: 60%;
     max-width: 100%;
+    height:auto;
  }
 
  
@@ -52,7 +54,6 @@ main {
     background-color: lightgray;
     padding: 32px;
     width: 100%;
-
     overflow-x: hidden; /* Hides horizontal overflow */
 }
     
@@ -66,4 +67,15 @@ main {
 nav img {
     max-width: 100%;
     height: auto;
+}
+
+.learn {
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 53, 53);
+}
+
+.paragraph {
+    font-size: 25px;
+    color: rgb(53, 53, 53);
 }
