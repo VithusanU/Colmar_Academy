@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body,
 html {
     background-color: white;
@@ -15,6 +20,8 @@ nav {
     background-color: white;
     width: 100%;
     padding: 0 20px; /* Adds spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    z-index: 10;
 }
 
 .colmar {
@@ -42,23 +49,69 @@ nav {
 .navbar h2:hover {
     color: grey; /* Optional hover effect */
 }
- .banner {
-    width: 60%;
+
+.banner {
+    width: 100%;
     max-width: 100%;
-    height:auto;
- }
+    height: auto;
+}
 
  
+/* Ensure main container takes full width and no extra padding */
 main {
     display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    width: 100%;
+    padding: 0; /* Remove padding around main */
+    margin: 0; /* Remove margin around main */
+    overflow-x: hidden;
+}
+.image_1 {
+    width: 50%; /* Make the image take up half the space */
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+/* Ensure section_1 background color takes full width of main */
+.section_1 {
     background-color: lightgray;
     padding: 32px;
-    width: 100%;
-    overflow-x: hidden; /* Hides horizontal overflow */
-}
-    
+    width: 100%; /* Full width of the parent (main) */
+    display: flex; /* Flex container to align items */
+    justify-content: space-between; /* Place image and container on opposite sides */
+    align-items: center; /* Center content vertically */
+    margin-top: 15px; /* Ensure no extra space around the section */
 
+}
+/* Section 2 specific styles */
+.section_2 {
+    background-color: white; /* Or any other background color */
+    padding: 32px;
+    width: 100%;
+    /* Add more styles specific to section 2 */
+}
+/* This is the main image in section 2s css styling */
+ .image_2 {
+    width: 60%;
+    max-width: 100%;
+ }
+ 
+ .practice {
+    font-family: 'Times New Roman', Times, serif;
+    color:brown
+ }
+
+ #practice_p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightslategray;
+ }
+/* Section 3 specific styles */
+.section_3 {
+    background-color: #f0f0f0; /* A different background */
+    padding: 32px;
+    width: 100%;
+    /* Add more styles specific to section 3 */
+}
 .container {
+    width: 45%; /* Adjust width of the text and button container */
     justify-content: center;
     align-items: center;
     padding: 0 24px;
@@ -74,10 +127,29 @@ nav img {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(53, 53, 53);
     font-size: 45px;
+    text-align: center;
 }
 
 .paragraph {
     font-size: 25px;
     color: rgb(53, 53, 53);
     line-height: 1.2;
+    text-align: center;
+}
+
+.button_1 {
+    background-color: grey;
+    color: white;
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.button_1:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 400ms ease-in, color 400ms ease-in;
 }
