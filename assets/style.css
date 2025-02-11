@@ -117,7 +117,8 @@ main {
 
 .practice {
     font-family: 'Times New Roman', Times, serif;
-    color: brown
+    color: brown;
+    font-size: 40px;
 }
 
 #practice_p {
@@ -127,10 +128,14 @@ main {
 
 /* Section 3 specific styles */
 .section_3 {
-    background-color: #f0f0f0;
+    background-color: gainsboro;
     /* A different background */
     padding: 32px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     /* Add more styles specific to section 3 */
 }
 
@@ -196,15 +201,20 @@ nav img {
 }
 
 .small-img {
-    height: 50px;
-    width: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .box {
+    display: flex;
+    align-items: center;
     border-style: solid;
     border-radius: 20px;
     border-width: 0.01px;
     padding: 20px;
+    height: 33%;
+    width: 100%;
 }
 
 #section_2_image {
@@ -218,7 +228,54 @@ nav img {
     text-align: center;
 }
 
-div :hover {
+.box:hover {
     background-color: gainsboro;
     transition: 600ms ease-in 300ms;
+}
+
+.flex-img {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-p {
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px; /* Adds spacing between the image and text */
+}
+
+.h3-title {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+color:grey;
+}
+
+.h4-info {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 100;
+}
+
+.ref {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.ref :hover {
+    /* color: darkblue; */
+    /* cursor: crosshair; */
+}
+
+#learning {
+    font-size: 50px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    color: rgb(68, 68, 68);
+}
+
+.boxes {
+    background-color: white;
 }
