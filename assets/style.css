@@ -244,19 +244,20 @@ nav img {
     width: 65%;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px; /* Adds spacing between the image and text */
+    padding-left: 10px;
+    /* Adds spacing between the image and text */
 }
 
 .h3-title {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px;
-color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: grey;
 }
 
 .h4-info {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .ref {
@@ -272,7 +273,7 @@ font-weight: 100;
 #learning {
     font-size: 50px;
     font-weight: 700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
     color: rgb(68, 68, 68);
 }
 
@@ -283,7 +284,8 @@ font-weight: 100;
     justify-content: center;
     align-items: center;
     /* width: 30%; Adjust width to fit properly */
-    min-width: 250px; /*Prevents boxes from getting too small*/
+    min-width: 250px;
+    /*Prevents boxes from getting too small*/
     /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -294,10 +296,13 @@ font-weight: 100;
 
 .container_4 {
     display: flex;
-    flex-wrap: wrap; /* Ensures items wrap if needed */
-    justify-content: space-evenly; /* Distributes space evenly */
+    flex-wrap: wrap;
+    /* Ensures items wrap if needed */
+    justify-content: space-evenly;
+    /* Distributes space evenly */
     align-items: center;
-    gap: 20px; /* Adds equal spacing between boxes */
+    gap: 20px;
+    /* Adds equal spacing between boxes */
     width: 100%;
     padding: 20px;
 }
@@ -308,27 +313,98 @@ font-weight: 100;
 }
 
 #section_3_p {
-    font-size: clamp(12px, 1vw, 14px); /* Keeps text size responsive */
+    font-size: clamp(12px, 1vw, 14px);
+    /* Keeps text size responsive */
     color: grey;
     line-height: 1.2;
     text-align: center;
     width: 100%;
     max-width: 100%;
-    white-space: normal; /* Allows text to wrap */
-    word-wrap: break-word; /* Prevents overflow */
-    overflow: hidden; /* Hides any excess text */
-    padding: 0 10px; /* Adds some spacing */
+    white-space: normal;
+    /* Allows text to wrap */
+    word-wrap: break-word;
+    /* Prevents overflow */
+    overflow: hidden;
+    /* Hides any excess text */
+    padding: 0 10px;
+    /* Adds some spacing */
 }
 
 .boxes p {
-    flex-grow: 1; /* Allows p to take available space */
+    flex-grow: 1;
+    /* Allows p to take available space */
     display: flex;
-    align-items: center; /* Centers text inside */
+    align-items: center;
+    /* Centers text inside */
     justify-content: center;
 }
 
 .boxes img {
-    width: 100%; /* Ensures image fills the box */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /*Removes extra spacing */
-    }
+    width: 100%;
+    /* Ensures image fills the box */
+    height: auto;
+    /* Maintains aspect ratio */
+    display: block;
+    /*Removes extra spacing */
+}
+
+.section_4 {
+    background-color: white;
+}
+
+.flex {
+    display: inline-flex;
+    width: 100%;
+}
+
+#video-thesis {
+    width: 100%;
+    height: auto;
+}
+
+.video {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0.01px;
+    padding: 20px;
+    width: 100%;
+}
+
+#thesis {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.802);
+}
+
+.space {
+    padding: 20px;
+    border-left: 4px solid grey;
+    width: 40%;
+}
+
+.pad {
+    padding: 20px;
+}
+
+.pad h2 {
+    font-size: 30px;
+}
+
+.pad p {
+    font-size: 20px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
