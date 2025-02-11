@@ -284,10 +284,12 @@ font-weight: 100;
     align-items: center;
     /* width: 30%; Adjust width to fit properly */
     min-width: 250px; /*Prevents boxes from getting too small*/
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    overflow: hidden;
+
 }
 
 .container_4 {
@@ -306,5 +308,27 @@ font-weight: 100;
 }
 
 #section_3_p {
+    font-size: clamp(12px, 1vw, 14px); /* Keeps text size responsive */
     color: grey;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal; /* Allows text to wrap */
+    word-wrap: break-word; /* Prevents overflow */
+    overflow: hidden; /* Hides any excess text */
+    padding: 0 10px; /* Adds some spacing */
 }
+
+.boxes p {
+    flex-grow: 1; /* Allows p to take available space */
+    display: flex;
+    align-items: center; /* Centers text inside */
+    justify-content: center;
+}
+
+.boxes img {
+    width: 100%; /* Ensures image fills the box */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /*Removes extra spacing */
+    }
