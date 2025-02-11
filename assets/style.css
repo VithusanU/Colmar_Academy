@@ -133,8 +133,9 @@ main {
     padding: 32px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     /* Add more styles specific to section 3 */
 }
 
@@ -249,6 +250,7 @@ nav img {
 .h3-title {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 30px;
+color:grey;
 }
 
 .h4-info {
@@ -265,4 +267,15 @@ font-weight: 100;
 .ref :hover {
     /* color: darkblue; */
     /* cursor: crosshair; */
+}
+
+#learning {
+    font-size: 50px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    color: rgb(68, 68, 68);
+}
+
+.boxes {
+    background-color: white;
 }
