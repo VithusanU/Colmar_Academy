@@ -278,4 +278,33 @@ font-weight: 100;
 
 .boxes {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 30%; Adjust width to fit properly */
+    min-width: 250px; /*Prevents boxes from getting too small*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container_4 {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap if needed */
+    justify-content: space-evenly; /* Distributes space evenly */
+    align-items: center;
+    gap: 20px; /* Adds equal spacing between boxes */
+    width: 100%;
+    padding: 20px;
+}
+
+.h3-title2 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.802);
+}
+
+#section_3_p {
+    color: grey;
 }
