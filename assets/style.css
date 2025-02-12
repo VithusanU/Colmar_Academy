@@ -13,13 +13,19 @@
     display: none;
 }
 
-/* Hides container 3 ny default on larger screens */
+/* Hides container 3 by default on larger screens */
 .container_3_mobile {
     display: none;
 }
 
-/* Hides section 3 ny default on larger screens */
+/* Hides section 3 by default on larger screens */
 .section_3_mobile {
+    display: none;
+}
+
+
+/* Hides mobile footer on default for larger screens */
+.inline-mobile {
     display: none;
 }
 
@@ -181,7 +187,8 @@
         display: none;
     }
 
-    .section_4_mobile h2, p{
+    .section_4_mobile h2,
+    .section_4_mobile p {
         display: none;
     }
 
@@ -196,6 +203,30 @@
         text-align: center;
         width: 100%;
     }
+
+    .inline {
+        display: none !important;
+    }
+
+
+    .inline-mobile {
+        display: inline-flex;
+        /* justify-content: flex-end; */
+        border-top: 2px solid grey;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+        background-color: white;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .copywright-mobile {
+        font-size: 20px;
+        color: black;
+        justify-content: space-between;
+    }
+
 }
 
 body,
