@@ -22,12 +22,16 @@
 .section_3_mobile {
     display: none;
 }
-
+/* Hides section 4 by default on larger screens */
+.section_4_mobile {
+    display: none;
+}
 
 /* Hides mobile footer on default for larger screens */
 .inline-mobile {
     display: none;
 }
+
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
