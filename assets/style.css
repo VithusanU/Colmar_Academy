@@ -7,11 +7,16 @@
 .nav-mobile {
     display: none;
 }
- /* Hide Section 1 by default on larger screens */
+
+/* Hide Section 1 by default on larger screens */
 .section_mobile {
     display: none;
 }
 
+/* Hides container 3 ny default on larger screens */
+.container_3_mobile {
+    display: none;
+}
 
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
@@ -33,7 +38,8 @@
 
     /* Hide section_1 on mobile */
     .section_1 {
-        display: none !important; /* Forcefully hide section_1 */
+        display: none !important;
+        /* Forcefully hide section_1 */
     }
 
     /* Show section_mobile on mobile */
@@ -50,9 +56,11 @@
 
     /* Styling for images and text in mobile section */
     .section_mobile .image_1 {
-        width: 100%; /* Full width for images */
+        width: 100%;
+        /* Full width for images */
         max-width: 100%;
-        margin-bottom: 16px; /* Adds some space below image */
+        margin-bottom: 16px;
+        /* Adds some space below image */
     }
 
     .section_mobile .container {
@@ -85,6 +93,54 @@
         background-color: white;
         color: black;
         transition: background-color 400ms ease-in, color 400ms ease-in;
+    }
+
+
+    .section_2 {
+        display: none !important;
+    }
+
+
+
+    .container_3_mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-left: lightgray;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        padding: 20px;
+        height: 33%;
+        width: 100%;
+    }
+
+    .box-mobile {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .box-mobile:hover {
+        background-color: rgba(41, 41, 41, 0.745);
+        color: azure;
+    }
+
+    .box-mobile:hover .h3-title {
+        color: black;
+    }
+
+    .flex-img-mobile {
+        width: 80%;
+        height: auto;
+        padding: 25px;
     }
 }
 
@@ -498,6 +554,7 @@ nav img {
     font-size: 25px;
     text-decoration: underline dashed;
 }
+
 .video p {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.682);
