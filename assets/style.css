@@ -3,6 +3,91 @@
 }
 
 
+/* Hide mobile nav by default on larger screens */
+.nav-mobile {
+    display: none;
+}
+ /* Hide Section 1 by default on larger screens */
+.section_mobile {
+    display: none;
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+
+    /* Mobile navigation */
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hide section_1 on mobile */
+    .section_1 {
+        display: none !important; /* Forcefully hide section_1 */
+    }
+
+    /* Show section_mobile on mobile */
+    .section_mobile {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: lightgray;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    /* Styling for images and text in mobile section */
+    .section_mobile .image_1 {
+        width: 100%; /* Full width for images */
+        max-width: 100%;
+        margin-bottom: 16px; /* Adds some space below image */
+    }
+
+    .section_mobile .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section_mobile .learn {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(53, 53, 53);
+    }
+
+    .section_mobile .paragraph {
+        font-size: 20px;
+        color: rgb(53, 53, 53);
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .section_mobile .button_1 {
+        background-color: grey;
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+
+    .section_mobile .button_1:hover {
+        background-color: white;
+        color: black;
+        transition: background-color 400ms ease-in, color 400ms ease-in;
+    }
+}
+
 body,
 html {
     background-color: white;
@@ -391,7 +476,7 @@ nav img {
 .space {
     padding: 20px;
     border-left: 4px solid grey;
-    width: 40%;
+    width: 80%;
 }
 
 .pad {
